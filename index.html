@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"  crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"  crossorigin=""></script>
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">   </script>
+ 
+  <title>Rita Doumet | IP Address Tracker</title>
+
+</head>
+<body>
+
+  <header>
+    <h1>IP Address Tracker</h1>
+    <form >
+        <input type="search" placeholder="Search for any IP address or domain" id="ipInput"/>
+        <input type="submit" value=""/>
+    </form>
+    <section id="infoSection">
+      <div class="info">
+        <p class="title">IP address</p>
+        <p class="data" id="ipAddr"></p>
+      </div>
+      <div class="vl"></div>
+      <div class="info">
+        <p class="title">Location</p>
+        <p class="data" id="loc"></p>
+      </div>
+      <div class="vl"></div>
+      <div class="info">
+        <p class="title">Timezone</p>
+        <p class="data" id="timezone"></p>
+      </div>
+      <div class="vl"></div>
+      <div class="info">
+        <p class="title">ISP</p>
+        <p class="data" id="isp"></p>
+      </div>
+    </section>
+  </header>
+
+  <!--This is the map. Made using Leaflet API. -->
+  <div id="map"></div>
+
+  <div class="lds-circle"><div></div></div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/ritadoumet">Rita Doumet</a>.
+  </div>
+  <script src="script.js"></script>
+ 
+</body>
+</html>
